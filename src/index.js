@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import TheOne from './TheOne';
 
 
 
 ReactDOM.render(
-          <App />,
+          <TheOne />,
           document.getElementById('root'));
 

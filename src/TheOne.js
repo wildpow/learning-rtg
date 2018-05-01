@@ -13,7 +13,7 @@ const Wrapper = styled.div`
 `;
 const H3 = styled.h3`
   display:inline-block;
-  font-size: 8rem;
+  font-size: 5rem;
   font-family: Verdana;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -45,6 +45,7 @@ class TheOne extends React.Component {
 
   render() {
     const textArray = [...this.state.text]
+    
     return (
       <Wrapper>
         <Title>please type something in</Title>
@@ -54,7 +55,7 @@ class TheOne extends React.Component {
             value={this.state.text}
             onChange={(event) => {
               this.setState({
-                text: event.target.value
+                text: event.target.value.replace(' ', '\u00a0') 
               })
             }}
           />

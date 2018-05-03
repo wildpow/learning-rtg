@@ -1,0 +1,95 @@
+
+.large_image {
+  width: 500px;
+  height: 500px;
+}
+.my-appear {
+  opacity: 0.01;
+  transform: scale(0.9) translateY(50%);
+}
+.my-active-appear {
+  opacity: 1;
+  transform: scale(1) translateY(0%);
+  transition: all 500ms ease-in;
+}
+.my-enter {
+  opacity: 0.01;
+  transform: scale(0.9) translateY(50%);
+}
+
+.my-active-enter {
+  opacity: 1;
+  transform: scale(1) translateY(0%);
+  transition: all 500ms ease-in;
+}
+.my-done-enter {
+  opacity: 1;
+  transform: scale(1) translateY(0%);
+  transition: all 500ms ease-in;
+}
+
+.my-exit {
+  opacity: 1;
+  transform: scale(1) translateY(0%);
+}
+.my-exit-active {
+  opacity: 0.01;
+  transform: scale(0.9) translateY(50%);
+  transition: all 500ms ease-in;
+}
+
+.this {
+  opacity: 0;
+  transition: all 500ms ease-in;
+}
+
+
+.fade-enter {
+  opacity: 0.01;
+  transition: all 200ms ease-in;
+}
+.fade-enter-active {
+  opacity: 1;
+  transition: all 200ms ease-in;
+}
+.fade-exit {
+  opacity: 1;
+  
+  transition: all 200ms ease-in;
+}
+.fade-exit-active {
+  opacity: 0.01;
+  transition: all 200ms ease-in;
+}
+.fade-appear {
+  opacity: 0.01;
+  transition: all 200ms ease-in;
+}
+.fade-appear-active {
+  opacity: 1;
+  transition: all 200ms ease-in;
+}
+
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  
+}
+.image_wrapper {
+  position: relative;
+}
+
+.small_image_wrapper {
+  display: flex;
+  
+}
+.small_image {
+  width: 165px;
+  height: 165px;
+  border: 2px solid white;
+}
+.small_image:hover {
+  border: 2px solid black; 
+}
